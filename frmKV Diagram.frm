@@ -11,18 +11,310 @@ Begin VB.Form frmKVDiagram
    ScaleMode       =   3  'Pixel
    ScaleWidth      =   1054
    StartUpPosition =   2  'CenterScreen
+   Begin VB.TextBox Text3 
+      Height          =   3255
+      Left            =   3360
+      Locked          =   -1  'True
+      MultiLine       =   -1  'True
+      ScrollBars      =   2  'Vertical
+      TabIndex        =   46
+      Top             =   5880
+      Visible         =   0   'False
+      Width           =   5055
+   End
+   Begin VB.CommandButton Command5 
+      Caption         =   "Clear All"
+      Height          =   375
+      Left            =   840
+      TabIndex        =   44
+      Top             =   1440
+      Visible         =   0   'False
+      Width           =   1455
+   End
+   Begin VB.PictureBox Picture2 
+      BackColor       =   &H00FFC0C0&
+      Height          =   4875
+      Left            =   3240
+      ScaleHeight     =   321
+      ScaleMode       =   3  'Pixel
+      ScaleWidth      =   813
+      TabIndex        =   35
+      Top             =   360
+      Width           =   12255
+      Begin VB.HScrollBar HS 
+         Height          =   255
+         LargeChange     =   10
+         Left            =   0
+         Max             =   100
+         TabIndex        =   43
+         Top             =   4560
+         Width           =   12255
+      End
+      Begin VB.PictureBox Picture3 
+         Appearance      =   0  'Flat
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFC0C0&
+         BorderStyle     =   0  'None
+         ForeColor       =   &H80000008&
+         Height          =   4575
+         Left            =   240
+         ScaleHeight     =   305
+         ScaleMode       =   3  'Pixel
+         ScaleWidth      =   321
+         TabIndex        =   36
+         Top             =   0
+         Width           =   4815
+         Begin VB.CommandButton Reprog 
+            Caption         =   "Command1"
+            Height          =   255
+            Index           =   0
+            Left            =   600
+            TabIndex        =   45
+            Top             =   120
+            Visible         =   0   'False
+            Width           =   1095
+         End
+         Begin VB.Label TNOT 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "NOT"
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   195
+            Index           =   0
+            Left            =   990
+            TabIndex        =   42
+            Top             =   2790
+            Visible         =   0   'False
+            Width           =   405
+         End
+         Begin VB.Label T4 
+            Alignment       =   2  'Center
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "Id(d)"
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   195
+            Index           =   0
+            Left            =   1440
+            TabIndex        =   41
+            Top             =   1740
+            Visible         =   0   'False
+            Width           =   435
+         End
+         Begin VB.Label T3 
+            Alignment       =   2  'Center
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "Id(c)"
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   195
+            Index           =   0
+            Left            =   600
+            TabIndex        =   40
+            Top             =   1740
+            Visible         =   0   'False
+            Width           =   420
+         End
+         Begin VB.Label T2 
+            Alignment       =   2  'Center
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "Id(b)"
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   195
+            Index           =   0
+            Left            =   1440
+            TabIndex        =   39
+            Top             =   1020
+            Visible         =   0   'False
+            Width           =   435
+         End
+         Begin VB.Label T1 
+            Alignment       =   2  'Center
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "Id(a)"
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   195
+            Index           =   0
+            Left            =   600
+            TabIndex        =   38
+            Top             =   1020
+            Visible         =   0   'False
+            Width           =   435
+         End
+         Begin VB.Shape NOT 
+            BackColor       =   &H00C0FFFF&
+            BackStyle       =   1  'Opaque
+            Height          =   855
+            Index           =   0
+            Left            =   840
+            Shape           =   3  'Circle
+            Top             =   2460
+            Visible         =   0   'False
+            Width           =   615
+         End
+         Begin VB.Shape C4 
+            BackColor       =   &H00FFC0C0&
+            BackStyle       =   1  'Opaque
+            Height          =   1815
+            Index           =   0
+            Left            =   1320
+            Shape           =   3  'Circle
+            Top             =   1020
+            Visible         =   0   'False
+            Width           =   615
+         End
+         Begin VB.Shape C3 
+            BackColor       =   &H0080FF80&
+            BackStyle       =   1  'Opaque
+            Height          =   1815
+            Index           =   0
+            Left            =   480
+            Shape           =   3  'Circle
+            Top             =   1020
+            Visible         =   0   'False
+            Width           =   615
+         End
+         Begin VB.Shape C2 
+            BackColor       =   &H008080FF&
+            BackStyle       =   1  'Opaque
+            Height          =   1815
+            Index           =   0
+            Left            =   1320
+            Shape           =   3  'Circle
+            Top             =   300
+            Visible         =   0   'False
+            Width           =   615
+         End
+         Begin VB.Shape C1 
+            BackColor       =   &H0080C0FF&
+            BackStyle       =   1  'Opaque
+            Height          =   1815
+            Index           =   0
+            Left            =   480
+            Shape           =   3  'Circle
+            Top             =   300
+            Visible         =   0   'False
+            Width           =   615
+         End
+         Begin VB.Label Label3 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "OUTPUT"
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   12
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   300
+            Left            =   660
+            TabIndex        =   37
+            Top             =   3750
+            Visible         =   0   'False
+            Width           =   1065
+         End
+         Begin VB.Shape output 
+            BackStyle       =   1  'Opaque
+            BorderColor     =   &H80000005&
+            Height          =   615
+            Left            =   240
+            Shape           =   4  'Rounded Rectangle
+            Top             =   3540
+            Visible         =   0   'False
+            Width           =   1815
+         End
+         Begin VB.Shape Conector 
+            BackStyle       =   1  'Opaque
+            BorderColor     =   &H80000005&
+            Height          =   255
+            Index           =   0
+            Left            =   930
+            Top             =   3300
+            Visible         =   0   'False
+            Width           =   495
+         End
+         Begin VB.Shape Camara 
+            BackColor       =   &H00FFFFFF&
+            BackStyle       =   1  'Opaque
+            BorderColor     =   &H80000005&
+            Height          =   2775
+            Index           =   0
+            Left            =   240
+            Shape           =   4  'Rounded Rectangle
+            Top             =   540
+            Visible         =   0   'False
+            Width           =   1815
+         End
+         Begin VB.Shape fondo 
+            BackColor       =   &H00FFC0C0&
+            BackStyle       =   1  'Opaque
+            BorderStyle     =   0  'Transparent
+            Height          =   4455
+            Left            =   0
+            Top             =   45
+            Visible         =   0   'False
+            Width           =   2295
+         End
+      End
+   End
    Begin VB.CheckBox Check1 
       Caption         =   "Simplification"
       Height          =   255
       Left            =   480
-      TabIndex        =   41
+      TabIndex        =   34
       Top             =   1080
       Width           =   1815
    End
    Begin VB.TextBox Text2 
       Height          =   285
-      Left            =   4680
-      TabIndex        =   35
+      Left            =   -4680
+      TabIndex        =   33
       Top             =   600
       Visible         =   0   'False
       Width           =   3255
@@ -31,7 +323,7 @@ Begin VB.Form frmKVDiagram
       Caption         =   "Generate"
       Height          =   375
       Left            =   840
-      TabIndex        =   34
+      TabIndex        =   32
       Top             =   2160
       Visible         =   0   'False
       Width           =   1455
@@ -40,7 +332,7 @@ Begin VB.Form frmKVDiagram
       Caption         =   "Ok"
       Height          =   375
       Left            =   2280
-      TabIndex        =   33
+      TabIndex        =   31
       Top             =   480
       Width           =   375
    End
@@ -57,6 +349,7 @@ Begin VB.Form frmKVDiagram
       Height          =   375
       Index           =   0
       Left            =   1920
+      MaxLength       =   1
       TabIndex        =   1
       Top             =   1800
       Visible         =   0   'False
@@ -69,35 +362,17 @@ Begin VB.Form frmKVDiagram
       Index           =   0
       Left            =   840
       Locked          =   -1  'True
-      TabIndex        =   31
+      TabIndex        =   29
       TabStop         =   0   'False
       Top             =   1800
       Visible         =   0   'False
       Width           =   1095
    End
-   Begin VB.CommandButton Command2 
-      Caption         =   "Procesar Info"
-      Height          =   615
-      Left            =   6480
-      TabIndex        =   30
-      Top             =   5640
-      Visible         =   0   'False
-      Width           =   1935
-   End
-   Begin VB.CommandButton Command1 
-      Caption         =   "Funciones hasta 3-Inputs"
-      Height          =   615
-      Left            =   13200
-      TabIndex        =   29
-      Top             =   6120
-      Visible         =   0   'False
-      Width           =   1935
-   End
    Begin VB.TextBox txtKV 
       Alignment       =   2  'Center
       Height          =   495
       Index           =   44
-      Left            =   12000
+      Left            =   -15000
       TabIndex        =   18
       Text            =   "0"
       Top             =   8520
@@ -108,7 +383,7 @@ Begin VB.Form frmKVDiagram
       Alignment       =   2  'Center
       Height          =   495
       Index           =   43
-      Left            =   11280
+      Left            =   -15000
       TabIndex        =   17
       Text            =   "0"
       Top             =   8520
@@ -119,7 +394,7 @@ Begin VB.Form frmKVDiagram
       Alignment       =   2  'Center
       Height          =   495
       Index           =   42
-      Left            =   10560
+      Left            =   -15000
       TabIndex        =   16
       Text            =   "0"
       Top             =   8520
@@ -130,7 +405,7 @@ Begin VB.Form frmKVDiagram
       Alignment       =   2  'Center
       Height          =   495
       Index           =   41
-      Left            =   9840
+      Left            =   -15000
       TabIndex        =   15
       Text            =   "0"
       Top             =   8520
@@ -141,7 +416,7 @@ Begin VB.Form frmKVDiagram
       Alignment       =   2  'Center
       Height          =   495
       Index           =   34
-      Left            =   12000
+      Left            =   -15000
       TabIndex        =   14
       Text            =   "0"
       Top             =   7800
@@ -152,7 +427,7 @@ Begin VB.Form frmKVDiagram
       Alignment       =   2  'Center
       Height          =   495
       Index           =   33
-      Left            =   11280
+      Left            =   -15000
       TabIndex        =   13
       Text            =   "0"
       Top             =   7800
@@ -163,7 +438,7 @@ Begin VB.Form frmKVDiagram
       Alignment       =   2  'Center
       Height          =   495
       Index           =   32
-      Left            =   10560
+      Left            =   -15000
       TabIndex        =   12
       Text            =   "0"
       Top             =   7800
@@ -174,7 +449,7 @@ Begin VB.Form frmKVDiagram
       Alignment       =   2  'Center
       Height          =   495
       Index           =   31
-      Left            =   9840
+      Left            =   -15000
       TabIndex        =   11
       Text            =   "0"
       Top             =   7800
@@ -185,7 +460,7 @@ Begin VB.Form frmKVDiagram
       Alignment       =   2  'Center
       Height          =   495
       Index           =   24
-      Left            =   12000
+      Left            =   -15000
       TabIndex        =   10
       Text            =   "0"
       Top             =   7080
@@ -196,7 +471,7 @@ Begin VB.Form frmKVDiagram
       Alignment       =   2  'Center
       Height          =   495
       Index           =   23
-      Left            =   11280
+      Left            =   -15000
       TabIndex        =   9
       Text            =   "0"
       Top             =   7080
@@ -207,7 +482,7 @@ Begin VB.Form frmKVDiagram
       Alignment       =   2  'Center
       Height          =   495
       Index           =   22
-      Left            =   10560
+      Left            =   -15000
       TabIndex        =   8
       Text            =   "0"
       Top             =   7080
@@ -218,7 +493,7 @@ Begin VB.Form frmKVDiagram
       Alignment       =   2  'Center
       Height          =   495
       Index           =   21
-      Left            =   9840
+      Left            =   -15000
       TabIndex        =   7
       Text            =   "0"
       Top             =   7080
@@ -229,7 +504,7 @@ Begin VB.Form frmKVDiagram
       Alignment       =   2  'Center
       Height          =   495
       Index           =   14
-      Left            =   12000
+      Left            =   -15000
       TabIndex        =   6
       Text            =   "0"
       Top             =   6360
@@ -240,7 +515,7 @@ Begin VB.Form frmKVDiagram
       Alignment       =   2  'Center
       Height          =   495
       Index           =   13
-      Left            =   11280
+      Left            =   -15000
       TabIndex        =   5
       Text            =   "0"
       Top             =   6360
@@ -251,7 +526,7 @@ Begin VB.Form frmKVDiagram
       Alignment       =   2  'Center
       Height          =   495
       Index           =   12
-      Left            =   10560
+      Left            =   -15000
       TabIndex        =   4
       Text            =   "0"
       Top             =   6360
@@ -262,7 +537,7 @@ Begin VB.Form frmKVDiagram
       Alignment       =   2  'Center
       Height          =   495
       Index           =   11
-      Left            =   9840
+      Left            =   -15000
       TabIndex        =   3
       Text            =   "0"
       Top             =   6360
@@ -278,238 +553,30 @@ Begin VB.Form frmKVDiagram
       Visible         =   0   'False
       Width           =   2655
    End
-   Begin VB.Label Label3 
-      AutoSize        =   -1  'True
-      BackStyle       =   0  'Transparent
-      Caption         =   "OUTPUT"
+   Begin VB.Label Label4 
+      Caption         =   "Chamber Info"
       BeginProperty Font 
-         Name            =   "Arial"
-         Size            =   12
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Height          =   300
-      Left            =   3720
-      TabIndex        =   43
-      Top             =   4560
-      Visible         =   0   'False
-      Width           =   1065
-   End
-   Begin VB.Shape Conector 
-      BackStyle       =   1  'Opaque
-      BorderColor     =   &H80000005&
       Height          =   255
-      Index           =   0
-      Left            =   3960
-      Top             =   4080
+      Left            =   3360
+      TabIndex        =   47
+      Top             =   5400
       Visible         =   0   'False
-      Width           =   495
-   End
-   Begin VB.Shape output 
-      BackStyle       =   1  'Opaque
-      BorderColor     =   &H80000005&
-      Height          =   615
-      Left            =   3240
-      Shape           =   4  'Rounded Rectangle
-      Top             =   4320
-      Visible         =   0   'False
-      Width           =   1815
-   End
-   Begin VB.Label Label2 
-      AutoSize        =   -1  'True
-      Caption         =   "Canninical Function"
-      Height          =   210
-      Left            =   3240
-      TabIndex        =   42
-      Top             =   600
-      Visible         =   0   'False
-      Width           =   1395
-   End
-   Begin VB.Label TNOT 
-      AutoSize        =   -1  'True
-      BackStyle       =   0  'Transparent
-      Caption         =   "NOT"
-      BeginProperty Font 
-         Name            =   "Arial"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   195
-      Index           =   0
-      Left            =   3960
-      TabIndex        =   40
-      Top             =   3480
-      Visible         =   0   'False
-      Width           =   405
-   End
-   Begin VB.Shape NOT 
-      BackColor       =   &H00C0FFFF&
-      BackStyle       =   1  'Opaque
-      Height          =   855
-      Index           =   0
-      Left            =   3840
-      Shape           =   3  'Circle
-      Top             =   3120
-      Visible         =   0   'False
-      Width           =   615
-   End
-   Begin VB.Label T4 
-      Alignment       =   2  'Center
-      AutoSize        =   -1  'True
-      BackStyle       =   0  'Transparent
-      Caption         =   "Id(d)"
-      BeginProperty Font 
-         Name            =   "Arial"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   195
-      Index           =   0
-      Left            =   4320
-      TabIndex        =   39
-      Top             =   2520
-      Visible         =   0   'False
-      Width           =   435
-   End
-   Begin VB.Shape C4 
-      BackColor       =   &H00FFC0C0&
-      BackStyle       =   1  'Opaque
-      Height          =   1815
-      Index           =   0
-      Left            =   4200
-      Shape           =   3  'Circle
-      Top             =   1800
-      Visible         =   0   'False
-      Width           =   615
-   End
-   Begin VB.Label T3 
-      Alignment       =   2  'Center
-      AutoSize        =   -1  'True
-      BackStyle       =   0  'Transparent
-      Caption         =   "Id(c)"
-      BeginProperty Font 
-         Name            =   "Arial"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   195
-      Index           =   0
-      Left            =   3600
-      TabIndex        =   38
-      Top             =   2520
-      Visible         =   0   'False
-      Width           =   420
-   End
-   Begin VB.Shape C3 
-      BackColor       =   &H0080FF80&
-      BackStyle       =   1  'Opaque
-      Height          =   1815
-      Index           =   0
-      Left            =   3480
-      Shape           =   3  'Circle
-      Top             =   1800
-      Visible         =   0   'False
-      Width           =   615
-   End
-   Begin VB.Label T2 
-      Alignment       =   2  'Center
-      AutoSize        =   -1  'True
-      BackStyle       =   0  'Transparent
-      Caption         =   "Id(b)"
-      BeginProperty Font 
-         Name            =   "Arial"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   195
-      Index           =   0
-      Left            =   4320
-      TabIndex        =   37
-      Top             =   1800
-      Visible         =   0   'False
-      Width           =   435
-   End
-   Begin VB.Shape C2 
-      BackColor       =   &H008080FF&
-      BackStyle       =   1  'Opaque
-      Height          =   1815
-      Index           =   0
-      Left            =   4200
-      Shape           =   3  'Circle
-      Top             =   1080
-      Visible         =   0   'False
-      Width           =   615
-   End
-   Begin VB.Label T1 
-      Alignment       =   2  'Center
-      AutoSize        =   -1  'True
-      BackStyle       =   0  'Transparent
-      Caption         =   "Id(a)"
-      BeginProperty Font 
-         Name            =   "Arial"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   195
-      Index           =   0
-      Left            =   3600
-      TabIndex        =   36
-      Top             =   1800
-      Visible         =   0   'False
-      Width           =   435
-   End
-   Begin VB.Shape C1 
-      BackColor       =   &H0080C0FF&
-      BackStyle       =   1  'Opaque
-      Height          =   1815
-      Index           =   0
-      Left            =   3480
-      Shape           =   3  'Circle
-      Top             =   1080
-      Visible         =   0   'False
-      Width           =   615
-   End
-   Begin VB.Shape Camara 
-      BackColor       =   &H00FFFFFF&
-      BackStyle       =   1  'Opaque
-      BorderColor     =   &H80000005&
-      Height          =   2775
-      Index           =   0
-      Left            =   3240
-      Shape           =   4  'Rounded Rectangle
-      Top             =   1320
-      Visible         =   0   'False
-      Width           =   1815
+      Width           =   1335
    End
    Begin VB.Label Label1 
       AutoSize        =   -1  'True
       Caption         =   "Num. Inputs:"
       Height          =   195
       Left            =   480
-      TabIndex        =   32
+      TabIndex        =   30
       Top             =   480
       Width           =   900
    End
@@ -519,7 +586,7 @@ Begin VB.Form frmKVDiagram
       BorderWidth     =   2
       Height          =   1455
       Index           =   0
-      Left            =   9720
+      Left            =   -9720
       Shape           =   4  'Rounded Rectangle
       Top             =   6240
       Visible         =   0   'False
@@ -530,7 +597,7 @@ Begin VB.Form frmKVDiagram
       BorderWidth     =   2
       Height          =   735
       Index           =   0
-      Left            =   9720
+      Left            =   -9720
       Shape           =   4  'Rounded Rectangle
       Top             =   6240
       Visible         =   0   'False
@@ -542,7 +609,7 @@ Begin VB.Form frmKVDiagram
       BorderWidth     =   2
       Height          =   1455
       Index           =   0
-      Left            =   9720
+      Left            =   -14985
       Shape           =   4  'Rounded Rectangle
       Top             =   6240
       Visible         =   0   'False
@@ -554,7 +621,7 @@ Begin VB.Form frmKVDiagram
       BorderWidth     =   2
       Height          =   735
       Index           =   0
-      Left            =   9720
+      Left            =   -9720
       Shape           =   4  'Rounded Rectangle
       Top             =   6240
       Visible         =   0   'False
@@ -566,7 +633,7 @@ Begin VB.Form frmKVDiagram
       BorderWidth     =   2
       Height          =   2895
       Index           =   0
-      Left            =   9720
+      Left            =   -9720
       Shape           =   4  'Rounded Rectangle
       Top             =   6240
       Visible         =   0   'False
@@ -578,7 +645,7 @@ Begin VB.Form frmKVDiagram
       BorderWidth     =   2
       Height          =   735
       Index           =   0
-      Left            =   9720
+      Left            =   -9720
       Shape           =   4  'Rounded Rectangle
       Top             =   6240
       Visible         =   0   'False
@@ -590,7 +657,7 @@ Begin VB.Form frmKVDiagram
       BorderWidth     =   2
       Height          =   2895
       Index           =   0
-      Left            =   9720
+      Left            =   -9720
       Shape           =   4  'Rounded Rectangle
       Top             =   6240
       Visible         =   0   'False
@@ -602,7 +669,7 @@ Begin VB.Form frmKVDiagram
       BorderWidth     =   2
       Height          =   1455
       Index           =   0
-      Left            =   9720
+      Left            =   -9720
       Shape           =   4  'Rounded Rectangle
       Top             =   6240
       Visible         =   0   'False
@@ -610,51 +677,46 @@ Begin VB.Form frmKVDiagram
    End
    Begin VB.Label lblR 
       AutoSize        =   -1  'True
-      Caption         =   "10"
       Height          =   195
       Index           =   4
       Left            =   9480
       TabIndex        =   28
       Top             =   8520
       Visible         =   0   'False
-      Width           =   180
+      Width           =   45
    End
    Begin VB.Label lblR 
       AutoSize        =   -1  'True
-      Caption         =   "11"
       Height          =   195
       Index           =   3
       Left            =   9480
       TabIndex        =   27
       Top             =   7800
       Visible         =   0   'False
-      Width           =   180
+      Width           =   45
    End
    Begin VB.Label lblR 
       AutoSize        =   -1  'True
-      Caption         =   "01"
       Height          =   195
       Index           =   2
       Left            =   9480
       TabIndex        =   26
       Top             =   7080
       Visible         =   0   'False
-      Width           =   180
+      Width           =   45
    End
    Begin VB.Label lblR 
       AutoSize        =   -1  'True
-      Caption         =   "00"
       Height          =   195
       Index           =   1
       Left            =   9480
       TabIndex        =   25
       Top             =   6360
       Visible         =   0   'False
-      Width           =   180
+      Width           =   45
    End
    Begin VB.Label lblC 
       Alignment       =   2  'Center
-      Caption         =   "10"
       Height          =   195
       Index           =   4
       Left            =   12000
@@ -666,76 +728,62 @@ Begin VB.Form frmKVDiagram
    Begin VB.Label lblC 
       Alignment       =   2  'Center
       AutoSize        =   -1  'True
-      Caption         =   "11"
       Height          =   195
       Index           =   3
-      Left            =   11280
+      Left            =   11490
       TabIndex        =   23
       Top             =   6000
       Visible         =   0   'False
-      Width           =   495
+      Width           =   75
    End
    Begin VB.Label lblC 
       Alignment       =   2  'Center
       AutoSize        =   -1  'True
-      Caption         =   "01"
       Height          =   195
       Index           =   2
-      Left            =   10560
+      Left            =   10770
       TabIndex        =   22
       Top             =   6000
       Visible         =   0   'False
-      Width           =   495
+      Width           =   75
    End
    Begin VB.Label lblC 
       Alignment       =   2  'Center
       AutoSize        =   -1  'True
-      Caption         =   "00"
       Height          =   195
       Index           =   1
-      Left            =   9720
+      Left            =   9930
       TabIndex        =   21
       Top             =   6000
       Visible         =   0   'False
-      Width           =   495
+      Width           =   75
    End
    Begin VB.Label lblR 
       AutoSize        =   -1  'True
-      Caption         =   "CD"
       Height          =   195
       Index           =   0
       Left            =   9120
       TabIndex        =   20
       Top             =   5880
       Visible         =   0   'False
-      Width           =   225
+      Width           =   45
    End
    Begin VB.Label lblC 
       AutoSize        =   -1  'True
-      Caption         =   "AB"
       Height          =   195
       Index           =   0
       Left            =   9480
       TabIndex        =   19
       Top             =   5640
       Visible         =   0   'False
-      Width           =   210
+      Width           =   45
    End
    Begin VB.Line Line1 
       Visible         =   0   'False
-      X1              =   648
-      X2              =   616
+      X1              =   -648
+      X2              =   -616
       Y1              =   416
       Y2              =   384
-   End
-   Begin VB.Shape fondo 
-      BackColor       =   &H00FFC0C0&
-      BackStyle       =   1  'Opaque
-      Height          =   4095
-      Left            =   3000
-      Top             =   1080
-      Visible         =   0   'False
-      Width           =   2295
    End
 End
 Attribute VB_Name = "frmKVDiagram"
@@ -745,14 +793,6 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 'Option Explicit
 
-
-' ***********************************************
-' ** This program solves a 4x4 KV-diagram      **
-' ** It even looks for random values indicated **
-' ** by 'X' or another non-numeric symbol.     **
-' ** Input: values in the KV-diagram           **
-' ** Ouput: the simpelest equation possible.   **
-' ***********************************************
 
 Const vbWhite = &HFFFFFF
 Const vbLightYellow = &H80FFFF
@@ -769,13 +809,6 @@ Const vbLightPurple = &HFF80FF
 Const vbPurple = &HFF00FF
 Const vbMagenta = &HFF00FF
 Dim Tested(1 To 4, 1 To 4) As String * 1
-
-Private Sub cmdSimplify_Click()
-
-
-
- MsgBox F
-End Sub
 
 Private Sub SetValue(C1 As Byte, C2 As Byte)
  Tested(C1, C2) = "1"
@@ -1103,292 +1136,11 @@ EndFunction:
 End Function
 
 Private Sub Command1_Click()
-Dim Strings() As String
 
-mm = FreeFile
-Open "c:\circuitos_3.txt" For Output As mm
-Close #mm
-
-NInp = 3
-Largo = 2 ^ NInp
-For Num = 0 To 2 ^ Largo - 1     'Num en binario representa una combinacion de outputs
-    Me.Caption = "Num=" & Num: DoEvents
-    Call PasaBinario(Num, Largo, StrBin)
-    For t = 1 To Largo
-        Me.txtKV(11).Text = "0"
-        Me.txtKV(12).Text = "0"
-        Me.txtKV(13).Text = "0"
-        Me.txtKV(14).Text = "0"
-        Me.txtKV(21).Text = "0"
-        Me.txtKV(22).Text = "0"
-        Me.txtKV(23).Text = "0"
-        Me.txtKV(24).Text = "0"
-        Me.txtKV(31).Text = "0"
-        Me.txtKV(32).Text = "0"
-        Me.txtKV(33).Text = "0"
-        Me.txtKV(34).Text = "0"
-        Me.txtKV(41).Text = "0"
-        Me.txtKV(42).Text = "0"
-        Me.txtKV(43).Text = "0"
-        Me.txtKV(44).Text = "0"
-        'Coloca este string en el mapa de karnaugh
-        Me.txtKV(11).Text = Mid(StrBin, Largo, 1): Me.txtKV(21).Text = Mid(StrBin, Largo, 1)
-        Me.txtKV(12).Text = Mid(StrBin, Largo - 1, 1): Me.txtKV(22).Text = Mid(StrBin, Largo - 1, 1)
-        Me.txtKV(13).Text = Mid(StrBin, Largo - 3, 1): Me.txtKV(23).Text = Mid(StrBin, Largo - 3, 1)
-        Me.txtKV(14).Text = Mid(StrBin, Largo - 2, 1): Me.txtKV(24).Text = Mid(StrBin, Largo - 2, 1)
-        
-        Me.txtKV(31).Text = Mid(StrBin, Largo - 4, 1): Me.txtKV(41).Text = Mid(StrBin, Largo - 4, 1)
-        Me.txtKV(32).Text = Mid(StrBin, Largo - 5, 1): Me.txtKV(42).Text = Mid(StrBin, Largo - 5, 1)
-        Me.txtKV(33).Text = Mid(StrBin, Largo - 7, 1): Me.txtKV(43).Text = Mid(StrBin, Largo - 7, 1)
-        Me.txtKV(34).Text = Mid(StrBin, Largo - 6, 1): Me.txtKV(44).Text = Mid(StrBin, Largo - 6, 1)
-    Next t
-    'Presenta la funcion canonica simplificada
-    funcion = Trim(F) & " "
-    'MsgBox Funcion
-    If Trim(funcion) <> "" Then
-        '**************************************************************************************************
-        '*                                  MODELO CON LOGICA INVERSA                                     *
-        '**************************************************************************************************
-        '1º Determina el numero de camaras/wires contando el numero de signos +
-        NumCam = 1
-        For t = 1 To Len(funcion)
-            If Mid(funcion, t, 1) = "+" Then NumCam = NumCam + 1
-        Next t
-        '2º Deterina el numero total de celulas que intervienen en el circuito
-        NumTotCells = 0
-        For t = 1 To Len(funcion)
-            If Mid(funcion, t, 1) <> "+" And Mid(funcion, t, 1) <> " " And Mid(funcion, t, 1) <> "'" Then NumTotCells = NumTotCells + 1
-        Next t
-        '3º Deterina los diferentes tipos celulars que participan
-        IdCells = ""
-        NotCells = ""
-        For t = 1 To Len(funcion)
-            If Mid(funcion, t, 1) <> "+" And Mid(funcion, t, 1) <> " " And Mid(funcion, t, 1) <> "'" Then
-                If Mid(funcion, t + 1, 1) = "'" Then
-                    'Si entra aquí es una puerta NOT
-                    'Mira si previamente ya existe
-                    If InStr(1, NotCells, "#" & Mid(funcion, t, 1) & "$") = 0 Then
-                        NotCells = NotCells & "#" & Mid(funcion, t, 1) & "$"
-                    End If
-                Else
-                    'Si entra aquí es una puerta Id
-                    'Mira si previamente ya existe
-                    If InStr(1, IdCells, "#" & Mid(funcion, t, 1) & "$") = 0 Then
-                        IdCells = IdCells & "#" & Mid(funcion, t, 1) & "$"
-                    End If
-                End If
-            End If
-        Next t
-        'Hace recuento de puertas NOT
-        NumNOTs = 0
-        For t = 1 To Len(NotCells)
-            If Mid(NotCells, t, 1) = "#" Then NumNOTs = NumNOTs + 1
-        Next t
-        'Hace recuento de puertas Id
-        NumIDs = 0
-        For t = 1 To Len(IdCells)
-            If Mid(IdCells, t, 1) = "#" Then NumIDs = NumIDs + 1
-        Next t
-        
-        '**************************************************************************************************
-        '*                                  MODELO CON LOGICA DIRECTA (Nature)                            *
-        '**************************************************************************************************
-        '1º Determina el numero de wires
-        NumWires = 0
-        For t = 1 To Len(funcion)
-            If Mid(funcion, t, 1) <> "+" And Mid(funcion, t, 1) <> " " And Mid(funcion, t, 1) <> "'" Then NumWires = NumWires + 1
-            If Mid(funcion, t, 1) = "+" Then NumWires = NumWires - 1
-        Next t
-        NumWires = NumWires - 1
-        
-        '2º Determina el numero de celulas diferentes
-        ReDim Strings(100) As String
-        Ft = Trim(funcion) & "+"
-        Cv = 0
-        Do
-            pp = InStr(1, Ft, "+")
-            If pp = 0 Then Exit Do
-            Info = Trim(Left(Ft, pp - 1)) & " "
-            Ft = Trim(Right(Ft, Len(Ft) - pp))
-            Cv = Cv + 1
-            For w = 1 To Len(Info) - 1
-                If Mid(Info, w, 1) <> " " And Mid(Info, w, 1) <> "'" And Mid(Info, w, 1) <> "+" Then
-                    If Mid(Info, w + 1, 1) = "'" Then
-                        Dato = UCase(Mid(Info, w, 1))
-                    Else
-                        Dato = LCase(Mid(Info, w, 1))
-                    End If
-                    Strings(Cv) = Strings(Cv) & Dato
-                End If
-            Next w
-        Loop
-        
-        For t = 1 To Cv
-            Strings(t) = Trim(Strings(t))
-        Next t
-        'Mira si hay celulas repetidas. Eso significa que detectan la misma señal externa (la misma letra) y la letra anterior debe ser la misma o bien ser la primera
-        NumTotCells2 = NumTotCells
-        For t = 97 + NInp To 97 Step -1
-            GateId = Chr(t)
-            For v = 1 To Cv
-                pp = InStr(1, Strings(v), GateId)
-                If pp > 1 And pp < Len(Strings(v)) Then
-                    'Si está presente crea la secuencia de localización
-                    SecGates = Mid(Strings(v), pp - 1, 1) & Mid(Strings(v), pp, 1)
-                    'Para esta secuencia mira si existe en el restro de cadenas
-                    For y = Cv + 1 To Cv
-                        pp = InStr(1, Strings(y), SecGates)
-                        If pp > 0 And y <> v Then
-                            'Si entra aqui hay dos pares de gates iguales, por tanto podemos reducir un wire y un tipo celular (al anterior)
-                            NumWires = NumWires - 1
-                            NumIDs = NumID - 1
-                        End If
-                    Next y
-                ElseIf pp = 1 And pp < Len(Strings(v)) Then
-                    NumWires = NumWires - 1
-                    NumIDs = NumIDs - 1
-                End If
-            Next v
-        Next t
-        For t = 97 + NInp To 97 Step -1
-            GateNOT = UCase(Chr(t))
-            For v = 1 To Cv
-                pp = InStr(1, Strings(v), GateNOT)
-                If pp > 1 And pp < Len(Strings(v)) Then
-                    'Si está presente crea la secuencia de localización
-                    SecGates = Mid(Strings(v), pp - 1, 1) & Mid(Strings(v), pp, 1)
-                    'Para esta secuencia mira si existe en el restro de cadenas
-                    For y = v + 1 To Cv
-                        pp = InStr(1, Strings(y), SecGates)
-                        If pp > 0 And y <> v Then
-                            'Si entra aqui hay dos pares de gates iguales, por tanto podemos reducir un wire y un tipo celular (al anterior)
-                            NumWires = NumWires - 1
-                            NumTotCells2 = NumTotCells2 - 1
-                        End If
-                    Next y
-                ElseIf pp = 1 And pp < Len(Strings(v)) Then
-                    For y = v + 1 To Cv
-                        pp = InStr(1, Strings(y), GateNOT)
-                        If pp = 1 And y <> v Then
-                            'Si entra aqui hay dos pares de gates iguales, por tanto podemos reducir un wire y un tipo celular (al anterior)
-                            NumWires = NumWires - 1
-                            NumTotCells2 = NumTotCells2 - 1
-                        End If
-                    Next y
-                End If
-            Next v
-        Next t
-        'Si una gate esta presente en todos los strings el nuemero de wires puede reducirse
-        For t = 97 + NInp To 97 Step -1
-            GateId = Chr(t)
-            For y = 1 To Cv
-                pp = InStr(1, Strings(y), GateId)
-                If pp = 0 Then GoTo 1
-            Next y
-        Next t
-        NumWires = NumWires - Cv + 1
-        
-1       For t = 97 + NInp To 97 Step -1
-            GateNOT = UCase(Chr(t))
-            For y = 1 To Cv
-                pp = InStr(1, Strings(y), GateNOT)
-                If pp = 0 Then GoTo 2
-            Next y
-        Next t
-        NumWires = NumWires - Cv + 1
-        
-2       'Graba los resultados
-        mm = FreeFile
-        Open "c:\circuitos_3.txt" For Append As mm
-            Print #mm, Num, NumCam, NumTotCells + NumCam, NumNOTs, NumIDs, NumTotCells2, NumWires
-        Close #mm
-    End If
-    
-
-Next Num
-
-MsgBox "END"
 End Sub
 
 Private Sub Command2_Click()
 
-Dim HistoCamsLI(1000)
-Dim HistoCellsLI(1000)
-Dim HistoIdLI(1000)
-Dim HistoNOTLI(1000)
-
-Dim HistoWiresLD(1000)
-Dim HistoCellsLD(1000)
-
-mm = FreeFile
-Open "c:\circuitos_3.txt" For Input As mm
-    While Not EOF(mm)
-        Input #mm, Num, NumCam, NumTotCells, NumNOTs, NumIDs, NumTotCells2, NumWires
-        HistoCamsLI(NumCam) = HistoCamsLI(NumCam) + 1
-        HistoCellsLI(NumTotCells) = HistoCellsLI(NumTotCells) + 1
-        HistoIdLI(NumIDs) = HistoIdLI(NumIDs) + 1
-        HistoNOTLI(NumNOTs) = HistoNOTLI(NumNOTs) + 1
-        HistoWiresLD(NumWires) = HistoWiresLD(NumWires) + 1
-        HistoCellsLD(NumTotCells2) = HistoCellsLD(NumTotCells2) + 1
-    Wend
-Close #mm
-
-'Graba Ficheros
-mm = FreeFile
-Open "c:\Histo_Cells_LI.txt" For Output As mm
-    Acum = 0
-    For t = 1 To 1000
-        Acum = Acum + HistoCellsLI(t)
-        Print #mm, t, Acum
-    Next t
-Close #mm
-
-mm = FreeFile
-Open "c:\Histo_Cams_LI.txt" For Output As mm
-    Acum = 0
-    For t = 1 To 1000
-        Acum = Acum + HistoCamsLI(t)
-        Print #mm, t, Acum
-    Next t
-Close #mm
-
-mm = FreeFile
-Open "c:\Histo_Id_LI.txt" For Output As mm
-    Acum = 0
-    For t = 1 To 1000
-        Acum = Acum + HistoIdLI(t)
-        Print #mm, t, Acum
-    Next t
-Close #mm
-
-mm = FreeFile
-Open "c:\Histo_NOT_LI.txt" For Output As mm
-    Acum = 0
-    For t = 1 To 1000
-        Acum = Acum + HistoNOTLI(t)
-        Print #mm, t, Acum
-    Next t
-Close #mm
-
-mm = FreeFile
-Open "c:\Histo_Wires_LD.txt" For Output As mm
-    Acum = 0
-    For t = 1 To 1000
-        Acum = Acum + HistoWiresLD(t)
-        Print #mm, t, Acum
-    Next t
-Close #mm
-
-mm = FreeFile
-Open "c:\Histo_Cells_LD.txt" For Output As mm
-    Acum = 0
-    For t = 1 To 1000
-        Acum = Acum + HistoCellsLD(t)
-        Print #mm, t, Acum
-    Next t
-Close #mm
-
-MsgBox "END"
 
 End Sub
 
@@ -1423,6 +1175,10 @@ Me.Command4.Left = Me.Entrada(0).Left
 Me.Command4.Top = Me.Entrada(NumCombInput).Top + 30
 Me.Command4.Visible = True
 
+Me.Command5.Left = Me.Entrada(0).Left
+Me.Command5.Top = Me.Entrada(0).Top - 3 '- Me.Command5.Height
+Me.Command5.Visible = True
+
 'LLena las cajas input
 For r = 0 To NumCombInput - 1
     Call PasaBinario(r, NInputs, StrBin)
@@ -1433,11 +1189,15 @@ Me.Salida(1).SetFocus
 End Sub
 
 Private Sub Command4_Click()
+Me.HS.Value = 0
 StrBin = ""
 
 NInputs = Val(Me.Text1.Text)
 Largo = 2 ^ NInputs
 NumCombInput = 2 ^ NInputs
+
+Me.Label4.Visible = True
+Me.Text3.Visible = True
 
 If Me.Check1.Value <> 1 Then
     func = ""
@@ -1461,6 +1221,8 @@ If Me.Check1.Value <> 1 Then
         GoTo 6
     End If
 End If
+
+
 
 'Inicializa mapa
 Me.txtKV(11).Text = "0"
@@ -1637,6 +1399,7 @@ For r = 1 To Nc - 1
     Load Me.NOT(r): Me.NOT(r).Top = Me.NOT(0).Top: Me.NOT(r).Left = Me.NOT(0).Left + paso * r: Me.NOT(r).ZOrder 0
     Load Me.TNOT(r): Me.TNOT(r).Top = Me.TNOT(0).Top: Me.TNOT(r).Left = Me.TNOT(0).Left + paso * r: Me.TNOT(r).ZOrder 0
     Load Me.Conector(r): Me.Conector(r).Top = Me.Conector(0).Top: Me.Conector(r).Left = Me.Conector(0).Left + paso * r: Me.Conector(r).ZOrder 0
+    Load Me.Reprog(r): Me.Reprog(r).Top = Me.Reprog(0).Top: Me.Reprog(r).Left = Me.Reprog(0).Left + paso * r: Me.Reprog(r).ZOrder 0
 Next r
 
 
@@ -1653,6 +1416,9 @@ For r = 0 To Nc - 1
     frmKVDiagram.NOT(r).Visible = True
     frmKVDiagram.TNOT(r).Visible = True
     frmKVDiagram.Conector(r).Visible = True
+    frmKVDiagram.Reprog(r).Caption = "Chamber #" & Trim(Str(r + 1))
+    frmKVDiagram.Reprog(r).Visible = True
+    
 Next r
 
 frmKVDiagram.output.Visible = True
@@ -1661,6 +1427,7 @@ Me.Label3.Left = Me.output.Left + Me.output.Width / 2 - Me.Label3.Width / 2
 Me.Label3.ZOrder 0
 Me.Label3.Visible = True
 Me.fondo.Width = Me.Camara(Nc - 1).Left + Me.Camara(Nc - 1).Width - Me.Camara(0).Left + 30
+Me.Picture3.Width = Me.Camara(Nc - 1).Left + Me.Camara(Nc - 1).Width - Me.Camara(0).Left + 30
 Me.fondo.Visible = True
 Me.fondo.ZOrder 1
 
@@ -1732,6 +1499,121 @@ Do
     cont = cont + 1
 Loop
 
+
+End Sub
+
+Private Sub Command5_Click()
+On Error GoTo 1
+i = 0
+Do
+    Me.Salida(i).Text = ""
+    i = i + 1
+Loop
+1 End Sub
+
+Private Sub Form_Resize()
+
+Me.Picture2.Width = Me.ScaleWidth - Me.Picture2.Left - 30
+Me.HS.Width = Me.Picture2.Width - 3
+
+End Sub
+
+
+
+Private Sub HS_Change()
+valor = Me.HS.Value
+
+If Me.Picture3.Width <= Me.Picture2.Width Then
+    Me.HS.Value = 0
+Else
+    Me.Picture3.Left = -(valor / 100) * (Me.Picture3.ScaleWidth - Me.Picture2.ScaleWidth)
+End If
+End Sub
+
+
+Private Sub Reprog_Click(Index As Integer)
+
+frase = Me.Reprog(Index).Caption & Chr(13) & Chr(10) & Chr(13) & Chr(10)
+frase = frase & "External Inputs: {"
+If Me.T1(Index).Visible = True Then frase = frase & "A "
+If Me.T2(Index).Visible = True Then frase = frase & "B "
+If Me.T3(Index).Visible = True Then frase = frase & "C "
+If Me.T4(Index).Visible = True Then frase = frase & "D "
+frase = Trim(frase) & "}"
+frase = frase & Chr(13) & Chr(10)
+frase = frase & Chr(13) & Chr(10)
+frase = frase & "Input Layer Composition" & Chr(13) & Chr(10)
+frase = frase & "===================" & Chr(13) & Chr(10)
+
+Tex1 = UCase(Me.T1(Index).Caption): Tx1 = "":
+For i = 1 To Len(Tex1):
+    a = Mid(Tex1, i, 1):
+    If Asc(a) = 13 Then a = " ":
+    If Asc(a) = 10 Then a = " ":
+    Tx1 = Tx1 & a:
+Next i
+Tex2 = UCase(Me.T2(Index).Caption): Tx2 = "":
+For i = 1 To Len(Tex2):
+    a = Mid(Tex2, i, 1):
+    If Asc(a) = 13 Then a = " ":
+    If Asc(a) = 10 Then a = " ":
+    Tx2 = Tx2 & a:
+Next i
+Tex3 = UCase(Me.T3(Index).Caption): Tx3 = "":
+    For i = 1 To Len(Tex3):
+        a = Mid(Tex3, i, 1):
+        If Asc(a) = 13 Then a = " ":
+        If Asc(a) = 10 Then a = " ":
+        Tx3 = Tx3 & a:
+    Next i
+Tex4 = UCase(Me.T4(Index).Caption): Tx4 = "":
+For i = 1 To Len(Tex4):
+    a = Mid(Tex4, i, 1):
+    If Asc(a) = 13 Then a = " ":
+    If Asc(a) = 10 Then a = " ":
+    Tx4 = Tx4 & a:
+Next i
+c = 0
+If Me.T1(Index).Visible = True Then c = c + 1: frase = frase & Space$(5) & "Cell #" & Trim(Str(c)) & ":  " & Tx1 & Chr(13) & Chr(10)
+If Me.T2(Index).Visible = True Then c = c + 1: frase = frase & Space$(5) & "Cell #" & Trim(Str(c)) & ":  " & Tx2 & Chr(13) & Chr(10)
+If Me.T3(Index).Visible = True Then c = c + 1: frase = frase & Space$(5) & "Cell #" & Trim(Str(c)) & ":  " & Tx3 & Chr(13) & Chr(10)
+If Me.T4(Index).Visible = True Then c = c + 1: frase = frase & Space$(5) & "Cell #" & Trim(Str(c)) & ":  " & Tx4 & Chr(13) & Chr(10)
+
+frase = frase & Chr(13) & Chr(10)
+frase = frase & Chr(13) & Chr(10)
+frase = frase & "Reprogramers" & Chr(13) & Chr(10)
+frase = frase & "===========" & Chr(13) & Chr(10)
+
+sw = 0
+If Me.T1(Index).Visible = True Then
+    pp = InStr(1, UCase(Me.T1(Index).Caption), "NOT")
+    If pp > 0 Then
+        frase = frase & Space$(0) & "Reprog. Cell #1" & Chr(13) & Chr(10): sw = 1
+    End If
+End If
+If Me.T2(Index).Visible = True Then
+    pp = InStr(1, UCase(Me.T2(Index).Caption), "NOT")
+    If pp > 0 Then
+        frase = frase & Space$(0) & "Reprog. Cell #2" & Chr(13) & Chr(10): sw = 1
+    End If
+End If
+If Me.T3(Index).Visible = True Then
+    pp = InStr(1, UCase(Me.T3(Index).Caption), "NOT")
+    If pp > 0 Then
+        frase = frase & Space$(0) & "Reprog. Cell #3" & Chr(13) & Chr(10): sw = 1
+    End If
+End If
+If Me.T4(Index).Visible = True Then
+    pp = InStr(1, UCase(Me.T4(Index).Caption), "NOT")
+    If pp > 0 Then
+        frase = frase & Space$(0) & "Reprog. Cell #4" & Chr(13) & Chr(10): sw = 1
+    End If
+End If
+
+If sw = 0 Then
+    frase = frase & "Reprogrammers Not Required"
+End If
+Me.Text3.Text = frase
 End Sub
 
 Private Sub Salida_KeyPress(Index As Integer, KeyAscii As Integer)

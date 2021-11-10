@@ -57,6 +57,7 @@ For r = 1 To 100
     Unload frmKVDiagram.NOT(r)
     Unload frmKVDiagram.TNOT(r)
     Unload frmKVDiagram.Conector(r)
+    Unload frmKVDiagram.Reprog(r)
 Next r
 
 frmKVDiagram.Label3.Visible = False
