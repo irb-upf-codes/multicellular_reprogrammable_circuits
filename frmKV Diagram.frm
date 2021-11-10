@@ -3,14 +3,13 @@ Begin VB.Form frmKVDiagram
    AutoRedraw      =   -1  'True
    Caption         =   "CDesign - Multicellular Ciruits Designer"
    ClientHeight    =   9420
-   ClientLeft      =   60
-   ClientTop       =   345
+   ClientLeft      =   180
+   ClientTop       =   480
    ClientWidth     =   15810
    LinkTopic       =   "Form1"
    ScaleHeight     =   628
    ScaleMode       =   3  'Pixel
    ScaleWidth      =   1054
-   StartUpPosition =   2  'CenterScreen
    Begin VB.TextBox Text3 
       Height          =   3255
       Left            =   3360
@@ -677,9 +676,10 @@ Begin VB.Form frmKVDiagram
    End
    Begin VB.Label lblR 
       AutoSize        =   -1  'True
+      Caption         =   "10"
       Height          =   195
       Index           =   4
-      Left            =   9480
+      Left            =   -9480
       TabIndex        =   28
       Top             =   8520
       Visible         =   0   'False
@@ -687,39 +687,43 @@ Begin VB.Form frmKVDiagram
    End
    Begin VB.Label lblR 
       AutoSize        =   -1  'True
+      Caption         =   "11"
       Height          =   195
       Index           =   3
-      Left            =   9480
+      Left            =   -9480
       TabIndex        =   27
       Top             =   7800
       Visible         =   0   'False
-      Width           =   45
+      Width           =   180
    End
    Begin VB.Label lblR 
       AutoSize        =   -1  'True
+      Caption         =   "01"
       Height          =   195
       Index           =   2
-      Left            =   9480
+      Left            =   -9480
       TabIndex        =   26
       Top             =   7080
       Visible         =   0   'False
-      Width           =   45
+      Width           =   180
    End
    Begin VB.Label lblR 
       AutoSize        =   -1  'True
+      Caption         =   "00"
       Height          =   195
       Index           =   1
-      Left            =   9480
+      Left            =   -9480
       TabIndex        =   25
       Top             =   6360
       Visible         =   0   'False
-      Width           =   45
+      Width           =   180
    End
    Begin VB.Label lblC 
       Alignment       =   2  'Center
+      Caption         =   "10"
       Height          =   195
       Index           =   4
-      Left            =   12000
+      Left            =   -12000
       TabIndex        =   24
       Top             =   6000
       Visible         =   0   'False
@@ -728,55 +732,60 @@ Begin VB.Form frmKVDiagram
    Begin VB.Label lblC 
       Alignment       =   2  'Center
       AutoSize        =   -1  'True
+      Caption         =   "11"
       Height          =   195
       Index           =   3
-      Left            =   11490
+      Left            =   -11430
       TabIndex        =   23
       Top             =   6000
       Visible         =   0   'False
-      Width           =   75
+      Width           =   195
    End
    Begin VB.Label lblC 
       Alignment       =   2  'Center
       AutoSize        =   -1  'True
+      Caption         =   "01"
       Height          =   195
       Index           =   2
-      Left            =   10770
+      Left            =   -10710
       TabIndex        =   22
       Top             =   6000
       Visible         =   0   'False
-      Width           =   75
+      Width           =   195
    End
    Begin VB.Label lblC 
       Alignment       =   2  'Center
       AutoSize        =   -1  'True
+      Caption         =   "00"
       Height          =   195
       Index           =   1
-      Left            =   9930
+      Left            =   -9870
       TabIndex        =   21
       Top             =   6000
       Visible         =   0   'False
-      Width           =   75
+      Width           =   195
    End
    Begin VB.Label lblR 
       AutoSize        =   -1  'True
+      Caption         =   "CD"
       Height          =   195
       Index           =   0
-      Left            =   9120
+      Left            =   -9120
       TabIndex        =   20
       Top             =   5880
       Visible         =   0   'False
-      Width           =   45
+      Width           =   225
    End
    Begin VB.Label lblC 
       AutoSize        =   -1  'True
+      Caption         =   "AB"
       Height          =   195
       Index           =   0
-      Left            =   9480
+      Left            =   -9480
       TabIndex        =   19
       Top             =   5640
       Visible         =   0   'False
-      Width           =   45
+      Width           =   210
    End
    Begin VB.Line Line1 
       Visible         =   0   'False
@@ -1189,6 +1198,7 @@ Me.Salida(1).SetFocus
 End Sub
 
 Private Sub Command4_Click()
+Me.Text3.Text = ""
 Me.HS.Value = 0
 StrBin = ""
 
